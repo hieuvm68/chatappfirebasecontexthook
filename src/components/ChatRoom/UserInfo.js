@@ -1,22 +1,32 @@
 import { Avatar, Button, Typography } from "antd";
-import React, { useEffect } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
-import { auth, db } from "../../firebase/config";
+import { AuthContext } from "../../Context/AuthProvider";
+import { auth } from "../../firebase/config";
 
 export default function UserInfo() {
-  useEffect(() => {
-    db.collection("user").onSnapshot((snapshot) => {
-      const data = snapshot.docs.map((doc) => ({
-        ...doc.data(),
-        id: doc.id,
-      }));
-    });
-  }, []);
+  // useEffect(() => {
+  //   db.collection("user").onSnapshot((snapshot) => {
+  //     const data = snapshot.docs.map((doc) => ({
+  //       ...doc.data(),
+  //       id: doc.id,
+  //     }));
+  //     console.log(data);
+  //   });
+  // }, []);
+  const {
+    user: { displayName, photoURL },
+  } = useContext(AuthContext);
+  // console.log({ data });
+
+  console.log("Userinfo1", { user: { displayName, photoURL } });
   return (
     <WrapperStyled>
       <div>
-        <Avatar>A</Avatar>
-        <Typography.Text className="userName">ABC</Typography.Text>
+        <Avatar src={photoURL}>
+          {photoURL ? "" : displayName?.charAt(0)?.toUpperCase()}
+        </Avatar>
+        <Typography.Text className="userName">{displayName}</Typography.Text>
       </div>
       <Button onClick={() => auth.signOut()} ghost>
         Đăng xuất

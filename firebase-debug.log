@@ -1,0 +1,550 @@
+[debug] [2022-08-22T17:03:41.364Z] ----------------------------------------------------------------------
+[debug] [2022-08-22T17:03:41.367Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-08-22T17:03:41.367Z] CLI Version:   11.7.0
+[debug] [2022-08-22T17:03:41.368Z] Platform:      win32
+[debug] [2022-08-22T17:03:41.368Z] Node Version:  v16.16.0
+[debug] [2022-08-22T17:03:41.369Z] Time:          Tue Aug 23 2022 00:03:41 GMT+0700 (Giờ Đông Dương)
+[debug] [2022-08-22T17:03:41.369Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-22T17:03:41.373Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-08-22T17:03:41.504Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-22T17:03:41.505Z] > authorizing via signed-in user (hieuvm68@gmail.com)
+[debug] [2022-08-22T17:03:41.861Z] java version "11.0.16" 2022-07-19 LTS
+[debug] [2022-08-22T17:03:41.862Z] 
+Java(TM) SE Runtime Environment 18.9 (build 11.0.16+11-LTS-199)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.16+11-LTS-199, mixed mode)
+
+[debug] [2022-08-22T17:03:41.940Z] Parsed Java major version: 11
+[info] i  emulators: Starting emulators: auth, functions, firestore, database, hosting, pubsub, storage, eventarc {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, database, hosting, pubsub, storage, eventarc"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project chat-app-8ebf4. This may result in unexpected behavior. 
+[debug] [2022-08-22T17:03:41.961Z] [hub] writing locator at C:\Users\hieuv\AppData\Local\Temp\hub-chat-app-8ebf4.json
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-08-22T17:03:42.057Z] defaultcredentials: writing to file C:\Users\hieuv\AppData\Roaming\firebase\hieuvm68_gmail_com_application_default_credentials.json
+[debug] [2022-08-22T17:03:42.060Z] Setting GAC to C:\Users\hieuv\AppData\Roaming\firebase\hieuvm68_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\hieuv\\AppData\\Roaming\\firebase\\hieuvm68_gmail_com_application_default_credentials.json"}}
+[debug] [2022-08-22T17:03:42.063Z] > refreshing access token with scopes: []
+[debug] [2022-08-22T17:03:42.067Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-08-22T17:03:42.067Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-22T17:03:42.082Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-08-22T17:03:42.082Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-08-22T17:03:42.326Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-08-22T17:03:42.327Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-22T17:03:42.337Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4/adminSdkConfig [none]
+[debug] [2022-08-22T17:03:42.820Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4/adminSdkConfig 200
+[debug] [2022-08-22T17:03:42.820Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4/adminSdkConfig {"projectId":"chat-app-8ebf4","databaseURL":"https://chat-app-8ebf4-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"chat-app-8ebf4.appspot.com","locationId":"asia-southeast2"}
+[debug] [2022-08-22T17:03:42.857Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-08-22T17:03:42.857Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-22T17:03:42.857Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\hieuv\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.14.4.jar","--host","localhost","--port",8080,"--rules","D:\\ReactJS\\chatappfirebasecontexthook\\firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\hieuv\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.14.4.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--rules\",\"D:\\\\ReactJS\\\\chatappfirebasecontexthook\\\\firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-08-22T17:03:45.240Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4 [none]
+[debug] [2022-08-22T17:03:45.727Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4 200
+[debug] [2022-08-22T17:03:45.728Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4 {"projectId":"chat-app-8ebf4","projectNumber":"543303493393","displayName":"chat-app","name":"projects/chat-app-8ebf4","resources":{"hostingSite":"chat-app-8ebf4","realtimeDatabaseInstance":"chat-app-8ebf4-default-rtdb","storageBucket":"chat-app-8ebf4.appspot.com","locationId":"asia-southeast2"},"state":"ACTIVE","etag":"1_49051c31-1348-498f-8165-d8c350dfdcb8"}
+[debug] [2022-08-22T17:03:45.729Z] database rules config:  [{"instance":"chat-app-8ebf4-default-rtdb","rules":"D:\\ReactJS\\chatappfirebasecontexthook\\database.rules.json"}]
+[debug] [2022-08-22T17:03:45.741Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-08-22T17:03:45.741Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-22T17:03:45.742Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-08-22T17:03:45.742Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\hieuv\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.8.0.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\hieuv\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.8.0.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2022-08-22T17:04:02.330Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-08-22T17:04:02.330Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-22T17:04:02.331Z] Starting Pub/Sub Emulator with command {"binary":"C:\\Users\\hieuv\\.cache\\firebase\\emulators\\pubsub-emulator-0.1.0\\pubsub-emulator\\bin\\cloud-pubsub-emulator.bat","args":["--host=localhost","--port=8085"],"optionalArgs":["port","host"],"joinArgs":true} {"metadata":{"emulator":{"name":"pubsub"},"message":"Starting Pub/Sub Emulator with command {\"binary\":\"C:\\\\Users\\\\hieuv\\\\.cache\\\\firebase\\\\emulators\\\\pubsub-emulator-0.1.0\\\\pubsub-emulator\\\\bin\\\\cloud-pubsub-emulator.bat\",\"args\":[\"--host=localhost\",\"--port=8085\"],\"optionalArgs\":[\"port\",\"host\"],\"joinArgs\":true}"}}
+[info] i  pubsub: Pub/Sub Emulator logging to pubsub-debug.log {"metadata":{"emulator":{"name":"pubsub"},"message":"Pub/Sub Emulator logging to \u001b[1mpubsub-debug.log\u001b[22m"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[debug] [2022-08-22T17:04:04.705Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-22T17:04:06.182Z] Temp file directory for storage emulator: C:\Users\hieuv\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\hieuv\\AppData\\Local\\Temp/firebase/storage/blobs"}}
+[debug] [2022-08-22T17:04:06.194Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/chat-app-8ebf4/sites 
+[debug] [2022-08-22T17:04:07.129Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/chat-app-8ebf4/sites 200
+[debug] [2022-08-22T17:04:07.129Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/chat-app-8ebf4/sites {"sites":[{"name":"projects/chat-app-8ebf4/sites/chat-app-8ebf4","defaultUrl":"https://chat-app-8ebf4.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-08-22T17:04:07.130Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4/webApps/-/config [none]
+[debug] [2022-08-22T17:04:08.264Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4/webApps/-/config 200
+[debug] [2022-08-22T17:04:08.265Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4/webApps/-/config {"projectId":"chat-app-8ebf4","appId":"1:543303493393:web:96a6b5d46451895f194eb0","databaseURL":"https://chat-app-8ebf4-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"chat-app-8ebf4.appspot.com","locationId":"asia-southeast2","apiKey":"AIzaSyCeiWcw5dXauyO0RtHPoiTFUzdl3Ii2x00","authDomain":"chat-app-8ebf4.firebaseapp.com","messagingSenderId":"543303493393","measurementId":"G-XP4SZ4MHYD"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-08-22T17:04:08.322Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-22T17:04:08.322Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-22T17:04:08.322Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\hieuv\\.cache\\firebase\\emulators\\ui-v1.9.0\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\hieuv\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.9.0\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-08-22T17:04:08.571Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "D:\ReactJS\chatappfirebasecontexthook\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\ReactJS\\chatappfirebasecontexthook\\functions\" for Cloud Functions..."}}
+[debug] [2022-08-22T17:04:08.612Z] Validating nodejs source
+[debug] [2022-08-22T17:04:13.690Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-22T17:04:13.690Z] Building nodejs source
+[debug] [2022-08-22T17:04:13.690Z] Analyzing nodejs backend spec
+[debug] [2022-08-22T17:04:13.693Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-22T17:04:15.104Z] Serving at port 9005
+
+[debug] [2022-08-22T17:04:15.794Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-22T17:04:15.805Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2022-08-22T17:04:15.833Z] >>> [apiv2][query] PUT http://localhost:9000/.settings/rules.json ns=chat-app-8ebf4-default-rtdb
+[debug] [2022-08-22T17:04:15.834Z] >>> [apiv2][body] PUT http://localhost:9000/.settings/rules.json "{\n  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */\n  \"rules\": {\n    \".read\": false,\n    \".write\": false\n  }\n}"
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[debug] [2022-08-22T17:04:16.474Z] <<< [apiv2][status] PUT http://localhost:9000/.settings/rules.json 200
+[debug] [2022-08-22T17:04:16.474Z] <<< [apiv2][body] PUT http://localhost:9000/.settings/rules.json {"status":"ok"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8080 │ http://localhost:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Database       │ localhost:9000 │ http://localhost:4000/database  │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Hosting        │ localhost:5000 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Pub/Sub        │ localhost:8085 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ localhost:9199 │ http://localhost:4000/storage   │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Eventarc       │ localhost:9299 │ n/a                             │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[warn] !  Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:207:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:294:24)
+    at grantToken (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1287:38)
+    at Proxy.<anonymous> (C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: eJv5GAOzzZPP2j2QxmY9DVOMUQEJ\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:207:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:294:24)\n    at grantToken (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1287:38)\n    at Proxy.<anonymous> (C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\hieuv\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[debug] [2022-08-22T17:47:37.547Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast [none]
+[debug] [2022-08-22T17:47:37.548Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast {"eventId":"dc697f5a-ea8b-4d40-82eb-20554ca9de56","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/chat-app-8ebf4","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-08-22T17:47:37.547Z","data":{"uid":"Wxudg9FG54tvizMXDQnVLmvGrI8X","email":"peach.grass.544@example.com","emailVerified":true,"displayName":"Peach Grass","metadata":{"lastSignInTime":"2022-08-22T17:47:37.545Z"},"customClaims":{},"providerData":[{"providerId":"facebook.com","rawId":"0904544766594505408114449768511749904398","federatedId":"0904544766594505408114449768511749904398","displayName":"Peach Grass","email":"peach.grass.544@example.com","screenName":"grass_peach"}]}}
+[debug] [2022-08-22T17:47:37.559Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast 200
+[debug] [2022-08-22T17:47:37.559Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-08-22T18:38:24.694Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast [none]
+[debug] [2022-08-22T18:38:24.694Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast {"eventId":"c705f70e-92c2-4013-9f56-e602bb1d4c9d","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/chat-app-8ebf4","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-08-22T18:38:24.693Z","data":{"uid":"ADuMFcu4wuSlCDMFzHt4fR8w1EaY","email":"peach.orange.734@example.com","emailVerified":true,"displayName":"Peach Orange","photoURL":"https://cdn.oneesports.vn/cdn-data/sites/4/2022/02/hinh-nen-Luffy-2K-chat-ngau.jpg","metadata":{"lastSignInTime":"2022-08-22T18:38:24.693Z"},"customClaims":{},"providerData":[{"providerId":"facebook.com","rawId":"1076241983562287930514067833702031873248","federatedId":"1076241983562287930514067833702031873248","displayName":"Peach Orange","photoUrl":"https://cdn.oneesports.vn/cdn-data/sites/4/2022/02/hinh-nen-Luffy-2K-chat-ngau.jpg","email":"peach.orange.734@example.com","screenName":"orange_peach"}]}}
+[debug] [2022-08-22T18:38:24.699Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast 200
+[debug] [2022-08-22T18:38:24.699Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-08-23T06:03:06.487Z] ----------------------------------------------------------------------
+[debug] [2022-08-23T06:03:06.491Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hieuv\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-08-23T06:03:06.492Z] CLI Version:   11.7.0
+[debug] [2022-08-23T06:03:06.492Z] Platform:      win32
+[debug] [2022-08-23T06:03:06.492Z] Node Version:  v16.16.0
+[debug] [2022-08-23T06:03:06.496Z] Time:          Tue Aug 23 2022 13:03:06 GMT+0700 (Giờ Đông Dương)
+[debug] [2022-08-23T06:03:06.497Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-23T06:03:06.701Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-23T06:03:06.702Z] > authorizing via signed-in user (hieuvm68@gmail.com)
+[debug] [2022-08-23T06:03:07.011Z] java version "11.0.16" 2022-07-19 LTS
+[debug] [2022-08-23T06:03:07.013Z] 
+Java(TM) SE Runtime Environment 18.9 (build 11.0.16+11-LTS-199)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.16+11-LTS-199, mixed mode)
+
+[debug] [2022-08-23T06:03:07.049Z] Parsed Java major version: 11
+[info] i  emulators: Starting emulators: auth, functions, firestore, database, hosting, pubsub, storage, eventarc {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, database, hosting, pubsub, storage, eventarc"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project chat-app-8ebf4. This may result in unexpected behavior. 
+[debug] [2022-08-23T06:03:07.071Z] [hub] writing locator at C:\Users\hieuv\AppData\Local\Temp\hub-chat-app-8ebf4.json
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-08-23T06:03:07.122Z] defaultcredentials: writing to file C:\Users\hieuv\AppData\Roaming\firebase\hieuvm68_gmail_com_application_default_credentials.json
+[debug] [2022-08-23T06:03:07.125Z] Setting GAC to C:\Users\hieuv\AppData\Roaming\firebase\hieuvm68_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\hieuv\\AppData\\Roaming\\firebase\\hieuvm68_gmail_com_application_default_credentials.json"}}
+[debug] [2022-08-23T06:03:07.127Z] > refreshing access token with scopes: []
+[debug] [2022-08-23T06:03:07.130Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-08-23T06:03:07.130Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-23T06:03:07.282Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-08-23T06:03:07.282Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-23T06:03:07.294Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4/adminSdkConfig [none]
+[debug] [2022-08-23T06:03:08.081Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4/adminSdkConfig 200
+[debug] [2022-08-23T06:03:08.082Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4/adminSdkConfig {"projectId":"chat-app-8ebf4","databaseURL":"https://chat-app-8ebf4-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"chat-app-8ebf4.appspot.com","locationId":"asia-southeast2"}
+[debug] [2022-08-23T06:03:08.127Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-08-23T06:03:08.127Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-23T06:03:08.127Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\hieuv\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.14.4.jar","--host","localhost","--port",8080,"--rules","D:\\ReactJS\\chatappfirebasecontexthook\\firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\hieuv\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.14.4.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--rules\",\"D:\\\\ReactJS\\\\chatappfirebasecontexthook\\\\firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-08-23T06:03:10.495Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4 [none]
+[debug] [2022-08-23T06:03:11.033Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4 200
+[debug] [2022-08-23T06:03:11.034Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4 {"projectId":"chat-app-8ebf4","projectNumber":"543303493393","displayName":"chat-app","name":"projects/chat-app-8ebf4","resources":{"hostingSite":"chat-app-8ebf4","realtimeDatabaseInstance":"chat-app-8ebf4-default-rtdb","storageBucket":"chat-app-8ebf4.appspot.com","locationId":"asia-southeast2"},"state":"ACTIVE","etag":"1_49051c31-1348-498f-8165-d8c350dfdcb8"}
+[debug] [2022-08-23T06:03:11.035Z] database rules config:  [{"instance":"chat-app-8ebf4-default-rtdb","rules":"D:\\ReactJS\\chatappfirebasecontexthook\\database.rules.json"}]
+[debug] [2022-08-23T06:03:11.047Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-08-23T06:03:11.048Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-23T06:03:11.048Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-08-23T06:03:11.048Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\hieuv\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.8.0.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\hieuv\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.8.0.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2022-08-23T06:03:27.618Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-08-23T06:03:27.618Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-23T06:03:27.619Z] Starting Pub/Sub Emulator with command {"binary":"C:\\Users\\hieuv\\.cache\\firebase\\emulators\\pubsub-emulator-0.1.0\\pubsub-emulator\\bin\\cloud-pubsub-emulator.bat","args":["--host=localhost","--port=8085"],"optionalArgs":["port","host"],"joinArgs":true} {"metadata":{"emulator":{"name":"pubsub"},"message":"Starting Pub/Sub Emulator with command {\"binary\":\"C:\\\\Users\\\\hieuv\\\\.cache\\\\firebase\\\\emulators\\\\pubsub-emulator-0.1.0\\\\pubsub-emulator\\\\bin\\\\cloud-pubsub-emulator.bat\",\"args\":[\"--host=localhost\",\"--port=8085\"],\"optionalArgs\":[\"port\",\"host\"],\"joinArgs\":true}"}}
+[info] i  pubsub: Pub/Sub Emulator logging to pubsub-debug.log {"metadata":{"emulator":{"name":"pubsub"},"message":"Pub/Sub Emulator logging to \u001b[1mpubsub-debug.log\u001b[22m"}}
+[debug] [2022-08-23T06:03:30.016Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-23T06:03:31.523Z] Temp file directory for storage emulator: C:\Users\hieuv\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\hieuv\\AppData\\Local\\Temp/firebase/storage/blobs"}}
+[debug] [2022-08-23T06:03:31.536Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/chat-app-8ebf4/sites 
+[debug] [2022-08-23T06:03:32.470Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/chat-app-8ebf4/sites 200
+[debug] [2022-08-23T06:03:32.470Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/chat-app-8ebf4/sites {"sites":[{"name":"projects/chat-app-8ebf4/sites/chat-app-8ebf4","defaultUrl":"https://chat-app-8ebf4.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-08-23T06:03:32.471Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4/webApps/-/config [none]
+[debug] [2022-08-23T06:03:32.617Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast [none]
+[debug] [2022-08-23T06:03:32.617Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast {"eventId":"434dc7cd-3ad7-4459-8130-ea9773d8e6d5","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/chat-app-8ebf4","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-08-23T06:03:32.616Z","data":{"uid":"wik62RWlmwa4PYVAr1R93y0pjl1T","email":"otter.raccoon.419@example.com","emailVerified":true,"displayName":"Otter Raccoon","metadata":{"lastSignInTime":"2022-08-23T06:03:32.614Z"},"customClaims":{},"providerData":[{"providerId":"facebook.com","rawId":"8183620050989553373963201256605038709612","federatedId":"8183620050989553373963201256605038709612","displayName":"Otter Raccoon","email":"otter.raccoon.419@example.com","screenName":"raccoon_otter"}]}}
+[debug] [2022-08-23T06:03:32.629Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast 200
+[debug] [2022-08-23T06:03:32.629Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-08-23T06:03:33.617Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4/webApps/-/config 200
+[debug] [2022-08-23T06:03:33.617Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-8ebf4/webApps/-/config {"projectId":"chat-app-8ebf4","appId":"1:543303493393:web:96a6b5d46451895f194eb0","databaseURL":"https://chat-app-8ebf4-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"chat-app-8ebf4.appspot.com","locationId":"asia-southeast2","apiKey":"AIzaSyCeiWcw5dXauyO0RtHPoiTFUzdl3Ii2x00","authDomain":"chat-app-8ebf4.firebaseapp.com","messagingSenderId":"543303493393","measurementId":"G-XP4SZ4MHYD"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-08-23T06:03:33.669Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-23T06:03:33.669Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-23T06:03:33.669Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\hieuv\\.cache\\firebase\\emulators\\ui-v1.9.0\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\hieuv\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.9.0\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[info] i  functions: Watching "D:\ReactJS\chatappfirebasecontexthook\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\ReactJS\\chatappfirebasecontexthook\\functions\" for Cloud Functions..."}}
+[debug] [2022-08-23T06:03:33.943Z] Validating nodejs source
+[debug] [2022-08-23T06:03:38.806Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-08-23T06:03:38.807Z] Building nodejs source
+[debug] [2022-08-23T06:03:38.807Z] Analyzing nodejs backend spec
+[debug] [2022-08-23T06:03:38.809Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[debug] [2022-08-23T06:03:38.810Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-23T06:03:40.910Z] Serving at port 9005
+
+[debug] [2022-08-23T06:03:41.808Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-23T06:03:41.816Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2022-08-23T06:03:41.843Z] >>> [apiv2][query] PUT http://localhost:9000/.settings/rules.json ns=chat-app-8ebf4-default-rtdb
+[debug] [2022-08-23T06:03:41.843Z] >>> [apiv2][body] PUT http://localhost:9000/.settings/rules.json "{\n  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */\n  \"rules\": {\n    \".read\": false,\n    \".write\": false\n  }\n}"
+[debug] [2022-08-23T06:03:42.116Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast [none]
+[debug] [2022-08-23T06:03:42.116Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast {"eventId":"ad267b1b-b1a3-4a45-90b8-08d4ce457629","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/chat-app-8ebf4","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-08-23T06:03:42.116Z","data":{"uid":"iUUKAy8bLS7TqTNT0I2mdE8FmXN8","email":"raccoon.grass.59@example.com","emailVerified":true,"displayName":"Raccoon Grass","metadata":{"lastSignInTime":"2022-08-23T06:03:42.116Z"},"customClaims":{},"providerData":[{"providerId":"facebook.com","rawId":"3766611005981496932800568224273429976557","federatedId":"3766611005981496932800568224273429976557","displayName":"Raccoon Grass","email":"raccoon.grass.59@example.com","screenName":"grass_raccoon"}]}}
+[debug] [2022-08-23T06:03:42.139Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast 200
+[debug] [2022-08-23T06:03:42.139Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-08-23T06:03:42.510Z] <<< [apiv2][status] PUT http://localhost:9000/.settings/rules.json 200
+[debug] [2022-08-23T06:03:42.511Z] <<< [apiv2][body] PUT http://localhost:9000/.settings/rules.json {"status":"ok"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8080 │ http://localhost:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Database       │ localhost:9000 │ http://localhost:4000/database  │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Hosting        │ localhost:5000 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Pub/Sub        │ localhost:8085 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ localhost:9199 │ http://localhost:4000/storage   │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Eventarc       │ localhost:9299 │ n/a                             │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-08-23T06:03:58.661Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast [none]
+[debug] [2022-08-23T06:03:58.661Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast {"eventId":"50f0a528-2da3-4fb4-90c5-97c5969bf8e6","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/chat-app-8ebf4","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-08-23T06:03:58.660Z","data":{"uid":"bSCeWlxe8vaLL3xVuDzquE2BlER0","email":"raccoon.panda.849@example.com","emailVerified":true,"displayName":"Raccoon Panda","metadata":{"lastSignInTime":"2022-08-23T06:03:58.660Z"},"customClaims":{},"providerData":[{"providerId":"facebook.com","rawId":"3688192133062784213739601898764902513555","federatedId":"3688192133062784213739601898764902513555","displayName":"Raccoon Panda","email":"raccoon.panda.849@example.com","screenName":"panda_raccoon"}]}}
+[debug] [2022-08-23T06:03:58.665Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast 200
+[debug] [2022-08-23T06:03:58.665Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-08-23T06:38:09.266Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast [none]
+[debug] [2022-08-23T06:38:09.267Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast {"eventId":"cf2a4774-7b0c-4dfa-980b-958ca1421f23","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/chat-app-8ebf4","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-08-23T06:38:09.265Z","data":{"uid":"aQgFRgmbiYKHkvHf1oxmcp2ymyqS","email":"mountain.peach.215@example.com","emailVerified":true,"displayName":"Mountain Peach","metadata":{"lastSignInTime":"2022-08-23T06:38:09.264Z"},"customClaims":{},"providerData":[{"providerId":"facebook.com","rawId":"7703615450246557149626360855527846106349","federatedId":"7703615450246557149626360855527846106349","displayName":"Mountain Peach","email":"mountain.peach.215@example.com","screenName":"peach_mountain"}]}}
+[debug] [2022-08-23T06:38:09.275Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast 200
+[debug] [2022-08-23T06:38:09.276Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/chat-app-8ebf4/trigger_multicast {"status":"multicast_acknowledged"}
